@@ -1,10 +1,12 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Laila', serif;
 }
 
 body {
-    margin: 0;
+    height: 100vh;
 }
 
 .container {
@@ -68,7 +70,7 @@ body {
 
 #header>img {
     width: 100%;
-    height: 550px;
+    height: 420px;
 }
 
 .intro {
@@ -111,12 +113,12 @@ body {
     text-align: center;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card {    
+    box-shadow: 0 4px 8px 0 darkgrey;
     max-width: 300px;
-    margin: auto;
     text-align: center;
-    font-family: arial;
+    border-radius: 10px;
+    margin: 2%;
 }
 
 .price {
@@ -279,7 +281,7 @@ i {
 
 #services {
     padding: 1px 0px;
-    background-color: black;
+    background-color: teal;
     color: cornsilk;
 }
 
@@ -308,19 +310,13 @@ button:hover {
     border-radius: 25px;
 }
 
-#footer {
-    background-color: whitesmoke;
-    width: 100%;
-    color: black;
-}
-
 #footer .col-25 {
     margin: 1%;
 }
 
 #footer .row input {
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: black;
     border-radius: 10px;
 }
 
@@ -328,6 +324,17 @@ button:hover {
     background-color: maroon;
     color: white;
     border-radius: 25px;
+}
+
+.bottom-footer{
+    margin-top: auto;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    height: 43px;
+    width: 100%;
+    padding: 5px;
+
 }
 
 .col-50 {
@@ -391,29 +398,28 @@ button:hover {
     nav ul li:hover>ul {
         display: none;
     }
-    .col-25 {
-        width: 90%;
-    }
-    .col-40 {
-        margin: 0%;
-        padding: 30% 0;
-    }
-    #services .row .col-25 h1 {
-        font-size: medium;
+    #services h3 {
+        font-size: 10px;
     }
     #services img {
-        height: 170px;
+        height: 150px;
+        width: auto;
+    }
+    .col-25 {
+        width: 30%;
     }
     .col-50 {
         margin: 4px;
         background-color: white;
         width: 100%;
     }
+    .col-75 {
+        padding-left: 9%;
+    }
     #footer .row h2 {
         font-size: medium;
     }
-}
-
-.row>.col-25>.card>img {
-    height: 300px;
+    p{
+        font-size: 12px;
+    }
 }
